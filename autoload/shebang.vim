@@ -4,7 +4,9 @@ let s:shebangs_local = {
             \ 'perl': '#!/usr/bin/env perl',
             \ 'python': '#!/usr/bin/env python',
             \ 'python2': '#!/usr/bin/env python2',
+            \ 'py2': '#!/usr/bin/env python2',
             \ 'python3': '#!/usr/bin/env python3',
+            \ 'py3': '#!/usr/bin/env python3',
             \ 'ruby': '#!/usr/bin/env ruby',
             \ 'sh': '#!/usr/bin/env sh',
             \ }
