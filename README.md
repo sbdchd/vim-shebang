@@ -12,19 +12,19 @@ Plug 'sbdchd/vim-shebang'
 
 ## Usage
 
-Run the command `:InsertShebang` or use an autocmd e.g., `au! BufNewFile * InsertShebang`.
+Run the command `:ShebangInsert` or use an autocmd e.g., `au! BufNewFile * ShebangInsert`.
 
-Normally, `:InsertShebang` will not overwrite an existing shebang.
-By calling the command with a bang, `:InsertShebang!`, any existing shebang
+Normally, `:ShebangInsert` will not overwrite an existing shebang.
+By calling the command with a bang, `:ShebangInsert!`, any existing shebang
 will be overwritten.
 
-Additionally, a shebang can be specified by passing a name/filetype to `:InsertShebang`.
+Additionally, a shebang can be specified by passing a name/filetype to `:ShebangInsert`.
 
-`:InsertShebang python` or `:InsertShebang node`
+`:ShebangInsert python` or `:ShebangInsert node`
 
 You can also directly pass your desired shebang to the function.
 
-`:InsertShebang #!/bin/sh`
+`:ShebangInsert #!/bin/sh`
 
 ## Config
 
