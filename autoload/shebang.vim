@@ -32,6 +32,10 @@ function! g:shebang#CheckShebang(...) abort
     else
         let l:argument = &filetype
     endif
+    if l:argument =~# '#!.*'
+        call g:shebang#InsertShebang(l:argument)
+        return 0
+    endif
 
     "see if specified shebang is defined in shebangs dict
     if has_key(g:shebang#shebangs, l:argument)
@@ -39,11 +43,6 @@ function! g:shebang#CheckShebang(...) abort
         return 0
     else
         return 1
-    endif
-
-    if l:argument =~# '#!.*'
-        call g:shebang#InsertShebang(l:argument)
-        return 0
     endif
 endfunction
 

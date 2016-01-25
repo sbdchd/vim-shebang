@@ -4,7 +4,7 @@ A simple plugin to insert the correct shebang of the file.
 
 ## Install
 
-vim-plug
+[vim-plug](https://github.com/junegunn/vim-plug)
 
 ```vimscript
 Plug 'sbdchd/vim-shebang'
