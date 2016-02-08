@@ -1,6 +1,7 @@
 let s:shebangs_local = {
             \ 'applescript': '#!/usr/bin/env osascript',
             \ 'bash':        '#!/usr/bin/env bash',
+            \ 'erlang':      '#!/usr/bin/env escript',
             \ 'lua':         '#!/usr/bin/env lua',
             \ 'node':        '#!/usr/bin/env node',
             \ 'perl':        '#!/usr/bin/env perl',
