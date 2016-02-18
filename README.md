@@ -1,4 +1,4 @@
-# vim-shebang
+# vim-shebang [![Build Status](https://travis-ci.org/sbdchd/vim-shebang.svg?branch=master)](https://travis-ci.org/sbdchd/vim-shebang) [![Circle CI](https://circleci.com/gh/sbdchd/vim-shebang.svg?style=svg)](https://circleci.com/gh/sbdchd/vim-shebang)
 
 A simple plugin to insert the correct shebang of the file.
 
