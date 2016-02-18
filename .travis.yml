@@ -1,5 +1,5 @@
 language: sh
 
-install: pip install vim-vint
+install: sudo pip install vim-vint
 
 script: vint .
