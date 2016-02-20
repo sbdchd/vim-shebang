@@ -2,6 +2,7 @@ let s:shebangs_local = {
             \ 'applescript': '#!/usr/bin/env osascript',
             \ 'bash':        '#!/usr/bin/env bash',
             \ 'erlang':      '#!/usr/bin/env escript',
+            \ 'fish':        '#!/usr/bin/env fish',
             \ 'lua':         '#!/usr/bin/env lua',
             \ 'node':        '#!/usr/bin/env node',
             \ 'perl':        '#!/usr/bin/env perl',
@@ -13,6 +14,7 @@ let s:shebangs_local = {
             \ 'python3':     '#!/usr/bin/env python3',
             \ 'ruby':        '#!/usr/bin/env ruby',
             \ 'sh':          '#!/usr/bin/env sh',
+            \ 'zsh':         '#!/usr/bin/env zsh',
             \ }
 
 if exists('g:shebang#shebangs')
