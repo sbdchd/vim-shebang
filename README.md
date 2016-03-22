@@ -6,7 +6,7 @@ A simple plugin to insert the correct shebang of the file.
 
 [vim-plug](https://github.com/junegunn/vim-plug)
 
-```vimscript
+```viml
 Plug 'sbdchd/vim-shebang'
 ```
 
@@ -31,7 +31,7 @@ You can also directly pass your desired shebang to the function.
 To add/change/remove a shebang and filetype, simple create the dictionary `g:shebang#shebangs`
 in your `.vimrc`.
 
-```vimscript
+```viml
 let g:shebang#shebangs = {
             \ 'python': '#!/bin/python',
             \ 'sh': '',
