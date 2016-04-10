@@ -20,11 +20,21 @@ will be overwritten.
 
 Additionally, a shebang can be specified by passing a name/filetype to `:ShebangInsert`.
 
-`:ShebangInsert python` or `:ShebangInsert node`
+```viml
+:ShebangInsert python
+```
+
+or
+
+```viml
+:ShebangInsert node
+```
 
 You can also directly pass your desired shebang to the function.
 
-`:ShebangInsert #!/bin/sh`
+```viml
+:ShebangInsert #!/bin/sh
+```
 
 ## Config
 
@@ -38,3 +48,18 @@ let g:shebang#shebangs = {
             \ 'newfiletype': '#!/bin/newshebang'
             \ }
 ```
+
+## Supported Filetypes
+
+- Applescript
+- Bash
+- Erlang (Escript)
+- Fish
+- Lua
+- Node
+- Perl
+- PHP
+- Python
+- Ruby
+- Sh
+- Zsh

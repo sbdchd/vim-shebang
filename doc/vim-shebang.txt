@@ -1,0 +1,76 @@
+*vim-shebang.txt*	A simple plugin to insert the correct shebang of the file.
+
+Version: 0.1
+
+CONTENTS					*vim-shebang-contents*
+
+Introduction		|vim-shebang-introduction|
+Install			    |vim-shebang-install|
+Usage			    |vim-shebang-usage|
+Supported Filetypes	|vim-shebang-supported-filetypes|
+
+==============================================================================
+INTRODUCTION					*vim-shebang-introduction*
+
+*vim-shebang* is a simple plugin to insert the correct shebang of the file.
+
+==============================================================================
+INSTALL						*vim-shebang-install*
+
+Install with [vim-plug](https://github.com/junegunn/vim-plug)
+>
+	Plug 'sbdchd/vim-shebang'
+<
+==============================================================================
+USAGE						*vim-shebang-usage* *Run*
+
+Run the command `:ShebangInsert` or use an autocmd e.g., `au! BufNewFile * ShebangInsert`.
+
+Normally, `:ShebangInsert` will not overwrite an existing shebang.
+By calling the command with a bang, `:ShebangInsert!`, any existing shebang
+will be overwritten.
+
+Additionally, a shebang can be specified by passing a name/filetype to `:ShebangInsert`.
+>
+    :ShebangInsert python
+<
+or
+>
+    :ShebangInsert node
+<
+You can also directly pass your desired shebang to the function.
+>
+    :ShebangInsert #!/bin/sh
+<
+==============================================================================
+CONFIGURATION					*vim-shebang-usage*
+
+To add/change/remove a shebang and filetype, simple create the dictionary `g:shebang#shebangs`
+in your `.vimrc`.
+
+>
+    let g:shebang#shebangs = {
+		\ 'python': '#!/bin/python',
+		\ 'sh': '',
+		\ 'newfiletype': '#!/bin/newshebang'
+		\ }
+<
+
+==============================================================================
+SUPPORTED FILETYPES				*vim-shebang-supported-filetypes*
+
+- Applescript
+- Bash
+- Erlang (Escript)
+- Fish
+- Lua
+- Node
+- Perl
+- PHP
+- Python
+- Ruby
+- Sh
+- Zsh
+
+==============================================================================
+vim:tw=78:ts=8:ft=help:norl:noet:fen:noet:
