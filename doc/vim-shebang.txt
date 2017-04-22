@@ -7,6 +7,7 @@ CONTENTS					*vim-shebang-contents*
 Introduction		|vim-shebang-introduction|
 Install			    |vim-shebang-install|
 Usage			    |vim-shebang-usage|
+Configuration		|vim-shebang-configuration|
 Supported Filetypes	|vim-shebang-supported-filetypes|
 
 ==============================================================================
@@ -43,7 +44,7 @@ You can also directly pass your desired shebang to the function.
     :ShebangInsert #!/bin/sh
 <
 ==============================================================================
-CONFIGURATION					*vim-shebang-usage*
+CONFIGURATION					*vim-shebang-configuration*
 
 To add/change/remove a shebang and filetype, simple create the dictionary `g:shebang#shebangs`
 in your `.vimrc`.
